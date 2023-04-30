@@ -1,0 +1,312 @@
+/* Fonts */
+
+/* Importar aquí la font */
+
+  @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,700&family=Merienda:wght@400;700&display=swap');
+
+
+body{
+    font-family: 'Lato', sans-serif;
+    font-family: 'Merienda', cursive;
+    background-color: #fbfbfb;
+    font-size: 18px;
+    color: #ofofof;
+}
+
+header{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+}
+
+.logogabrielandre {
+  height: 150px;
+  width: 150px;
+  margin-left: 8%;
+}
+
+nav ul{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+nav ul li{
+    margin-right: 10px;
+}
+
+nav ul li: last-child{
+    margin-right: 0;
+}
+
+main{
+    padding: 40px;
+}
+
+#inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.circle{
+    width: 200px;
+    max-width: 25rem;
+    border-radius:50%;
+    border: 40px solid #fff;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    margin-bottom: 50px;
+
+}
+
+#inicio{
+    margin-bottom: 20px;
+}
+#contacto{
+    margin-bottom: 10px;
+}
+
+h1{
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#inicio #contacto{
+    line-height: 1.2;
+    min-height: 100vh;
+}
+
+form input[type= "submit"]{
+    background-color: #af599e;
+    color: #fbfbfb;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 9px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.fondo {
+    background-color: rgb(216 191 216);
+    padding: 20px;
+}
+
+
+
+h2{
+    line-height: 28px;
+    text-align: center;
+}
+
+.enlacesinfo{
+  width: 60px;
+  height: 60px;
+}
+
+
+.enlaces-erika1 {
+  position: absolute;
+  left: 25%;
+  margin-top: 20px;
+}
+
+.enlaces-erika2 {
+  position: absolute;
+  left: 50%;
+  margin-top: 20px;
+}
+
+.enlaces-erika3 {
+  position: absolute;
+  left: 75%;
+  margin-top: 20px;
+}
+
+.datos-contacto {
+  margin-top: 100px;
+  margin-left: 100px;
+}
+
+.footerr {
+    margin-top: 80px;
+    height: 40px;
+    width: 100%;
+    background: #af599e;
+    text-align: center;
+}
+
+    @media screen and (max-width:768px){
+        /* Header */
+header{
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+}
+
+.logogabrielandre{
+  visibility: hidden;
+  height: 0;
+  width: 0;
+}
+
+nav ul{
+    margin-top: 10px;
+}
+nav li{
+    margin-bottom: 20px;
+}
+nav ul li{
+    margin-right: 20px;
+}
+        /* Main */
+main{
+    padding: 20px;
+}
+img{
+    max-width: 15rem;
+    border-radius: 10%
+    border: 1px solid: #fff;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2)
+}
+h2{
+    font-size: 24px;
+}
+section ul li{
+    font-size: 18px;
+}
+       /* Contacto */
+#contacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+form input[type= "submit"]{
+    padding: 8px 16px;
+    font-size: 14px;
+}
+          /* Footer */
+.footerr {
+    margin-top: 80px;
+    height: 40px;
+    width: 100%;
+    background: #af599e;
+    text-align: center;
+}
+
+.enlaces-erika1 {
+  position: absolute;
+  left: 15%;
+  margin-top: 300px;
+}
+
+.enlaces-erika2 {
+  position: absolute;
+  left: 43%;
+  margin-top: 300px;
+}
+
+.enlaces-erika3 {
+  position: absolute;
+  left: 70%;
+  margin-top: 300px;
+}
+
+}
+
+
+
+
+/* Reset */
+
+* {
+
+    box-sizing: border-box;
+
+    margin: 0;
+
+    padding: 0;
+
+    /* Para que el scrolleo en la one page sea suave */
+
+    scroll-behavior: smooth;
+
+}
+
+
+
+/* Para quitar los puntos a los items de listas */
+
+ul {
+
+    list-style: none;
+
+}
+
+
+
+/* Para que los enlaces hereden el color de texto y no tengan subrayado */
+
+a {
+
+    text-decoration: none;
+
+    color: inherit;
+
+}
+
+
+
+/* Este max-width es para que el contenido no se "estire" demasiado hacia los costados y
+
+*  el margin: auto; para tenerlo centrado fácilmente ;)
+
+*/
+
+main {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+}
+
+
+
+/* Recomendaciones!
+
+*  - Comenzar desde lo más general y luego ir hacia lo mas específico, asignando primero
+
+*    "estilos generales". Una buena idea sería comenzar por el <body> ;)
+
+*
+
+*  - Recuerden que queremos evitar "repetir código", en CSS usando la cualidad de la herencia
+
+*    podemos setear ciertas propiedades en un elemento padre y dejar que sean heredadas (por ejemplo: font-size)
+
+*
+
+*  - Nadie sabe todas las propiedades CSS de memoria, si no saben como hacer algo no lo recuerdan, la respuesta
+
+*    pueden encontrarla buscando en la web algo como "CSS como hacer ... " o "propiedad css para hacer ..."
+
+*
+
+*  - Usen mucho las herramientas para desarrolladores del navegador para ir
+
+*    probando el CSS que escriben, resolver dudas y problemas.
+
+*
+
+*  - Paciencia, resiliencia y creatividad! No se desanimen, las primeras experiencias maquetando con HTML y CSS
+
+*    pueden ser frustrantes, pero estas habilidades se van desarrollando con la experiencia, es como aprender
+
+*    un trabajo manual, hacer una artesanía, tocar un instrumento musical... la práctica es todo!
+
+*/
